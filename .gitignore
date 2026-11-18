@@ -48,3 +48,6 @@ README.TXT
 
 # 源图片（已复制到 assets/logo.png）
 perfski.png
+
+# 作品安装包源文件（通过 GitHub Releases 托管下载）
+project/

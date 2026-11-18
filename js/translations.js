@@ -8,78 +8,61 @@
 window.I18N = {
   en: {
     /* meta */
-    "meta.title": "PerfSki — Personal Homepage",
+    "meta.title": "PerfSki — Download My Apps",
     "meta.description":
-      "Personal homepage and portfolio of PerfSki — a software developer focused on performance and user experience.",
+      "Download page for PerfSki's personal works: HeyTRACE and other self-developed tools & apps. Free download.",
 
     /* nav */
     "nav.menu": "Open menu",
     "nav.about": "About",
-    "nav.skills": "Skills",
     "nav.projects": "Projects",
     "nav.contact": "Contact",
     "nav.theme": "Toggle theme",
 
     /* hero */
-    "hero.kicker": "Hello, nice to meet you 👋",
+    "hero.kicker": "Welcome to my works page 👋",
     "hero.title.pre": "I'm",
-    "hero.role": "Software Developer · Performance & UX Enthusiast",
+    "hero.role": "Indie Developer · Performance Analysis Tools",
     "hero.desc":
-      "I love building fast, reliable products with great user experience. This is my personal homepage and portfolio — feel free to explore what I've been working on.",
-    "hero.cta.projects": "View Projects",
+      "This is the official download page for my personal works — the tools and apps I build. Everything is free to download and use. Enjoy!",
+    "hero.cta.download": "Download Works",
     "hero.cta.contact": "Contact Me",
-    "hero.stat.years": "Years of experience",
-    "hero.stat.projects": "Projects",
-    "hero.stat.passion": "Always learning",
+    "hero.stat.works": "Published works",
+    "hero.stat.version": "Latest version",
+    "hero.stat.platform": "Platform",
+
+    /* projects / downloads */
+    "projects.kicker": "Works",
+    "projects.title": "All Downloads",
+    "projects.desc":
+      "Here are all my currently published works. Click to download.",
+    "projects.heytrace.meta": "Windows · 106.6 MB · RAR archive",
+    "projects.heytrace.desc":
+      "An AI-powered Android performance trace analysis desktop app. Built on Perfetto data, it ships with an AI agent and a rich analysis skill set (jank detection, frame pipeline analysis, CPU scheduling & throttling, SurfaceFlinger composition, React Native bridge jank, power analysis, and more), supports GLM / Kimi / Qwen and other LLMs, and generates professional performance analysis reports in one click.",
+    "projects.heytrace.download": "Download HeyTRACE 1.1.0",
+    "projects.tag.jank": "Jank Analysis",
+    "projects.tag.frame": "Frame Pipeline",
+    "projects.tag.power": "CPU / Power",
+    "projects.link.release": "Release Page",
 
     /* about */
     "about.kicker": "About",
     "about.title": "Solving problems with code, winning users with experience",
     "about.p1":
-      "I'm a software developer focused on web and application development. I enjoy digging into performance optimization, engineering efficiency, and interaction details — I believe great products need both a solid core and a smooth experience.",
+      "I'm a software developer focused on performance analysis tools and applications. I enjoy digging into performance optimization, engineering efficiency, and interaction details — I believe great products need both a solid core and a smooth experience.",
     "about.p2":
       "Outside of work, I enjoy skiing, reading, and tinkering with new technology. If any of that sounds interesting — or you'd like to collaborate — feel free to reach out.",
     "about.fact.location.label": "Location",
     "about.fact.location.value": "China · Remote friendly",
     "about.fact.focus.label": "Focus",
-    "about.fact.focus.value": "Performance · Web Dev · Open Source",
+    "about.fact.focus.value": "Performance Analysis · Tooling · AI Apps",
     "about.fact.email.label": "Email",
-
-    /* skills */
-    "skills.kicker": "Skills",
-    "skills.title": "Tools & technologies I use",
-    "skills.cat.frontend": "Frontend",
-    "skills.cat.backend": "Backend",
-    "skills.cat.performance": "Performance & Engineering",
-    "skills.cat.tools": "Collaboration & Tools",
-    "skills.tag.perf": "Profiling",
-    "skills.tag.testing": "Automated Testing",
-    "skills.tag.agile": "Agile Collaboration",
-    "skills.tag.docs": "Technical Writing",
-
-    /* projects */
-    "projects.kicker": "Projects",
-    "projects.title": "Selected Work",
-    "projects.desc":
-      "Here are some representative projects (sample content — feel free to replace them with your real work).",
-    "projects.perfkit.desc":
-      "A lightweight performance monitoring and profiling toolkit that helps teams quickly find bottlenecks in web apps.",
-    "projects.snowui.desc":
-      "A lightweight UI component library for the modern web, focused on accessibility, theming, and tiny bundle size.",
-    "projects.trailmap.desc":
-      "A skiing and outdoor trail-tracking app with playback, data analysis, and route sharing.",
-    "projects.launchpad.desc":
-      "A static-site deployment and optimization scaffold: build, compress, and publish globally with one command.",
-    "projects.tag.monitor": "Monitoring",
-    "projects.tag.a11y": "Accessibility",
-    "projects.link.code": "Code",
-    "projects.link.demo": "Live Demo",
 
     /* contact */
     "contact.kicker": "Contact",
-    "contact.title": "Let's build something interesting together",
+    "contact.title": "Feedback & Collaboration",
     "contact.desc":
-      "Whether it's project collaboration, tech talk, or just saying hi — drop me an email anytime.",
+      "Hit a problem, have a feature idea, or want to collaborate — drop me an email anytime.",
     "contact.cta.email": "Send an Email",
 
     /* footer */

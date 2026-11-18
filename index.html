@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title data-i18n="meta.title">PerfSki — 个人主页</title>
+  <title data-i18n="meta.title">PerfSki — 个人作品下载</title>
   <meta name="description" data-i18n-content="meta.description"
-        content="PerfSki 的个人主页与作品集：软件开发者，关注性能与体验。">
+        content="PerfSki 的个人作品下载站：HeyTRACE 等自研工具与应用，免费下载。">
   <meta property="og:type" content="website">
-  <meta property="og:title" data-i18n-content="meta.title" content="PerfSki — 个人主页">
+  <meta property="og:title" data-i18n-content="meta.title" content="PerfSki — 个人作品下载">
   <meta property="og:description" data-i18n-content="meta.description"
-        content="PerfSki 的个人主页与作品集：软件开发者，关注性能与体验。">
+        content="PerfSki 的个人作品下载站：HeyTRACE 等自研工具与应用，免费下载。">
   <meta name="theme-color" content="#0b0f19">
   <link rel="icon" type="image/png" href="assets/favicon.png">
   <script>document.documentElement.classList.add("js");</script>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=2">
 </head>
 <body>
 
@@ -35,7 +35,6 @@
       <div class="nav-menu" id="navMenu">
         <ul class="nav-links">
           <li><a href="#about" data-i18n="nav.about">关于</a></li>
-          <li><a href="#skills" data-i18n="nav.skills">技能</a></li>
           <li><a href="#projects" data-i18n="nav.projects">项目</a></li>
           <li><a href="#contact" data-i18n="nav.contact">联系</a></li>
         </ul>
@@ -56,31 +55,80 @@
     <section class="hero">
       <div class="hero-bg" aria-hidden="true"></div>
       <div class="container hero-inner">
-        <p class="hero-kicker reveal" data-i18n="hero.kicker">你好，很高兴见到你 👋</p>
+        <p class="hero-kicker reveal" data-i18n="hero.kicker">欢迎来到我的作品站 👋</p>
         <h1 class="hero-title reveal">
           <span data-i18n="hero.title.pre">我是</span>
           <span class="gradient-text">PerfSki</span>
         </h1>
-        <p class="hero-role reveal" data-i18n="hero.role">软件开发者 · 性能与体验爱好者</p>
+        <p class="hero-role reveal" data-i18n="hero.role">独立开发者 · 性能分析工具开发</p>
         <p class="hero-desc reveal" data-i18n="hero.desc">
-          我热衷于构建快速、可靠、体验出色的产品。这里是我的个人主页与作品集，欢迎了解我做过的事情。
+          这里是我个人作品的官方下载站，提供我开发的工具与应用。所有作品均可免费下载使用，欢迎体验。
         </p>
         <div class="hero-actions reveal">
-          <a class="btn btn-primary" href="#projects" data-i18n="hero.cta.projects">查看项目</a>
+          <a class="btn btn-primary" href="#projects" data-i18n="hero.cta.download">下载作品</a>
           <a class="btn btn-secondary" href="#contact" data-i18n="hero.cta.contact">联系我</a>
         </div>
-        <ul class="hero-stats reveal" id="heroStats">
-          <li><strong>5+</strong><span data-i18n="hero.stat.years">年开发经验</span></li>
-          <li><strong>20+</strong><span data-i18n="hero.stat.projects">个项目</span></li>
-          <li><strong>∞</strong><span data-i18n="hero.stat.passion">持续学习</span></li>
+        <ul class="hero-stats reveal">
+          <li><strong>1</strong><span data-i18n="hero.stat.works">已发布作品</span></li>
+          <li><strong>v1.1.0</strong><span data-i18n="hero.stat.version">最新版本</span></li>
+          <li><strong>Windows</strong><span data-i18n="hero.stat.platform">支持平台</span></li>
         </ul>
       </div>
     </section>
 
-    <!-- ============ 关于 ============ -->
-    <section class="section" id="about">
+    <!-- ============ 项目 / 作品下载 ============ -->
+    <section class="section" id="projects">
       <div class="container">
-        <p class="kicker reveal" data-i18n="about.kicker">关于我</p>
+        <p class="kicker reveal" data-i18n="projects.kicker">项目作品</p>
+        <h2 class="section-title reveal" data-i18n="projects.title">全部作品下载</h2>
+        <p class="section-desc reveal" data-i18n="projects.desc">以下是我当前发布的所有项目作品，点击即可下载。</p>
+        <div class="projects-grid">
+
+          <!-- ====== 作品 1：HeyTRACE 1.1.0 ====== -->
+          <article class="card project-card download-card reveal">
+            <div class="project-head">
+              <div class="project-icon" aria-hidden="true">📊</div>
+              <div>
+                <h3>HeyTRACE <span class="version-badge">v1.1.0</span></h3>
+                <p class="project-meta" data-i18n="projects.heytrace.meta">Windows · 106.6 MB · RAR 压缩包</p>
+              </div>
+            </div>
+            <p data-i18n="projects.heytrace.desc">
+              AI 驱动的 Android 性能 Trace 分析桌面工具。基于 Perfetto 数据，内置 AI Agent
+              与性能分析技能库（卡顿检测、帧管线分析、CPU 调度与降频、SurfaceFlinger 合成、
+              React Native 桥接卡顿、功耗分析等），支持 GLM / Kimi / Qwen 等大模型，
+              一键生成专业的性能分析报告。
+            </p>
+            <ul class="tag-list">
+              <li>Perfetto</li>
+              <li>AI Agent</li>
+              <li data-i18n="projects.tag.jank">卡顿分析</li>
+              <li data-i18n="projects.tag.frame">帧管线</li>
+              <li data-i18n="projects.tag.power">CPU / 功耗</li>
+              <li>GLM / Kimi / Qwen</li>
+            </ul>
+            <div class="project-links">
+              <a class="btn btn-primary btn-download"
+                 href="https://github.com/perfski/perfski.github.io/releases/download/HeyTRACE-v1.1.0/HeyTRACE-1.1.0.rar">
+                <span data-i18n="projects.heytrace.download">下载 HeyTRACE 1.1.0</span>
+              </a>
+              <a class="btn btn-secondary"
+                 href="https://github.com/perfski/perfski.github.io/releases/tag/HeyTRACE-v1.1.0">
+                <span data-i18n="projects.link.release">版本发布页</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- ====== 未来更多作品追加在这里 ====== -->
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 关于 ============ -->
+    <section class="section section-alt" id="about">
+      <div class="container">
+        <p class="kicker reveal" data-i18n="about.kicker">关于</p>
         <h2 class="section-title reveal" data-i18n="about.title">用代码解决问题，用体验打动用户</h2>
         <div class="about-grid">
           <div class="about-avatar reveal" aria-hidden="true">
@@ -97,7 +145,7 @@
           </div>
           <div class="about-body">
             <p class="reveal" data-i18n="about.p1">
-              我是一名软件开发者，专注于 Web 与应用开发。我喜欢研究性能优化、工程效率和交互细节，
+              我是一名软件开发者，专注于性能分析工具与应用开发。我喜欢研究性能优化、工程效率和交互细节，
               相信好的产品既要有扎实的内核，也要有顺滑的体验。
             </p>
             <p class="reveal" data-i18n="about.p2">
@@ -110,7 +158,7 @@
               </div>
               <div class="fact">
                 <dt data-i18n="about.fact.focus.label">关注方向</dt>
-                <dd data-i18n="about.fact.focus.value">性能优化 · Web 开发 · 开源</dd>
+                <dd data-i18n="about.fact.focus.value">性能分析 · 工具开发 · AI 应用</dd>
               </div>
               <div class="fact">
                 <dt data-i18n="about.fact.email.label">邮箱</dt>
@@ -122,129 +170,13 @@
       </div>
     </section>
 
-    <!-- ============ 技能 ============ -->
-    <section class="section section-alt" id="skills">
-      <div class="container">
-        <p class="kicker reveal" data-i18n="skills.kicker">技能</p>
-        <h2 class="section-title reveal" data-i18n="skills.title">我常用的工具与技术</h2>
-        <div class="skills-grid">
-          <article class="card skill-card reveal">
-            <h3 data-i18n="skills.cat.frontend">前端开发</h3>
-            <ul class="tag-list">
-              <li>HTML / CSS</li><li>JavaScript</li><li>TypeScript</li>
-              <li>React</li><li>Vue</li>
-            </ul>
-          </article>
-          <article class="card skill-card reveal">
-            <h3 data-i18n="skills.cat.backend">后端开发</h3>
-            <ul class="tag-list">
-              <li>Node.js</li><li>Go</li><li>Python</li>
-              <li>PostgreSQL</li><li>Redis</li>
-            </ul>
-          </article>
-          <article class="card skill-card reveal">
-            <h3 data-i18n="skills.cat.performance">性能与工程</h3>
-            <ul class="tag-list">
-              <li data-i18n="skills.tag.perf">性能剖析</li><li>CI / CD</li>
-              <li>Docker</li><li data-i18n="skills.tag.testing">自动化测试</li>
-              <li>Observability</li>
-            </ul>
-          </article>
-          <article class="card skill-card reveal">
-            <h3 data-i18n="skills.cat.tools">协作与工具</h3>
-            <ul class="tag-list">
-              <li>Git</li><li>Linux</li><li>Figma</li>
-              <li data-i18n="skills.tag.agile">敏捷协作</li>
-              <li data-i18n="skills.tag.docs">技术写作</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ 项目 ============ -->
-    <section class="section" id="projects">
-      <div class="container">
-        <p class="kicker reveal" data-i18n="projects.kicker">项目</p>
-        <h2 class="section-title reveal" data-i18n="projects.title">精选作品集</h2>
-        <p class="section-desc reveal" data-i18n="projects.desc">以下是一些代表性的项目（示例内容，可替换为你的真实作品）。</p>
-        <div class="projects-grid">
-
-          <article class="card project-card reveal">
-            <div class="project-icon" aria-hidden="true">⚡</div>
-            <h3>PerfKit</h3>
-            <p data-i18n="projects.perfkit.desc">
-              一套轻量的性能监控与剖析工具集，帮助团队快速定位 Web 应用的性能瓶颈。
-            </p>
-            <ul class="tag-list">
-              <li>TypeScript</li><li>Node.js</li>
-              <li data-i18n="projects.tag.monitor">监控</li>
-            </ul>
-            <div class="project-links">
-              <a href="https://github.com/perfski" data-i18n="projects.link.code">源码</a>
-              <a href="#" data-i18n="projects.link.demo">在线演示</a>
-            </div>
-          </article>
-
-          <article class="card project-card reveal">
-            <div class="project-icon" aria-hidden="true">❄️</div>
-            <h3>SnowUI</h3>
-            <p data-i18n="projects.snowui.desc">
-              面向现代 Web 的轻量 UI 组件库，注重可访问性、主题定制与极小的包体积。
-            </p>
-            <ul class="tag-list">
-              <li>CSS</li><li>JavaScript</li>
-              <li data-i18n="projects.tag.a11y">可访问性</li>
-            </ul>
-            <div class="project-links">
-              <a href="https://github.com/perfski" data-i18n="projects.link.code">源码</a>
-              <a href="#" data-i18n="projects.link.demo">在线演示</a>
-            </div>
-          </article>
-
-          <article class="card project-card reveal">
-            <div class="project-icon" aria-hidden="true">⛷️</div>
-            <h3>TrailMap</h3>
-            <p data-i18n="projects.trailmap.desc">
-              滑雪与户外轨迹记录应用，支持轨迹回放、数据分析与路线分享。
-            </p>
-            <ul class="tag-list">
-              <li>Vue</li><li>Go</li>
-              <li>PostgreSQL</li>
-            </ul>
-            <div class="project-links">
-              <a href="https://github.com/perfski" data-i18n="projects.link.code">源码</a>
-              <a href="#" data-i18n="projects.link.demo">在线演示</a>
-            </div>
-          </article>
-
-          <article class="card project-card reveal">
-            <div class="project-icon" aria-hidden="true">🚀</div>
-            <h3>LaunchPad</h3>
-            <p data-i18n="projects.launchpad.desc">
-              静态站点部署与优化脚手架，一条命令完成构建、压缩与全球加速发布。
-            </p>
-            <ul class="tag-list">
-              <li>Python</li><li>Docker</li>
-              <li>CI / CD</li>
-            </ul>
-            <div class="project-links">
-              <a href="https://github.com/perfski" data-i18n="projects.link.code">源码</a>
-              <a href="#" data-i18n="projects.link.demo">在线演示</a>
-            </div>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
     <!-- ============ 联系 ============ -->
-    <section class="section section-alt" id="contact">
+    <section class="section" id="contact">
       <div class="container contact-box reveal">
         <p class="kicker" data-i18n="contact.kicker">联系</p>
-        <h2 class="section-title" data-i18n="contact.title">一起做点有意思的事</h2>
+        <h2 class="section-title" data-i18n="contact.title">反馈与合作</h2>
         <p class="section-desc" data-i18n="contact.desc">
-          无论是项目合作、技术交流还是只是打个招呼，都欢迎给我发邮件。
+          使用中遇到问题、有功能建议或想合作，欢迎给我发邮件。
         </p>
         <div class="contact-actions">
           <a class="btn btn-primary" href="mailto:hello@perfski.dev" data-i18n="contact.cta.email">发送邮件</a>
@@ -267,7 +199,7 @@
     </div>
   </footer>
 
-  <script src="js/translations.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/translations.js?v=2"></script>
+  <script src="js/main.js?v=2"></script>
 </body>
 </html>

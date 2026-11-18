@@ -1,6 +1,6 @@
 # perfski.github.io
 
-PerfSki 的个人主页 / 作品集，纯静态 HTML / CSS / JS 构建，中英双语，无任何外部依赖。
+PerfSki 的个人作品下载站，纯静态 HTML / CSS / JS 构建，中英双语，无任何外部依赖。
 
 **Live site:** <https://perfski.github.io>
 
@@ -14,9 +14,28 @@ PerfSki 的个人主页 / 作品集，纯静态 HTML / CSS / JS 构建，中英�
 ├── js/main.js          # 主题切换 / 语言切换 / 交互
 ├── assets/logo.png     # 站点 logo（透明底像素画）
 ├── assets/favicon.png  # 网站图标（logo + 深色圆角底板）
+├── project/            # 作品安装包源文件（不入库，见下）
 ├── .gitignore
 └── LICENSE             # Apache-2.0
 ```
+
+## 作品下载托管（GitHub Releases）
+
+安装包通常超过 GitHub 仓库单文件 100MB 上限，因此**不直接进仓库**，而是挂到
+[GitHub Releases](https://github.com/perfski/perfski.github.io/releases)：
+
+1. 把安装包放到 `project/` 目录（该目录已加入 .gitignore）。
+2. 创建 Release 并上传安装包：
+
+   ```bash
+   # 在 GitHub 网页创建 release（tag 例如 HeyTRACE-v1.2.0），
+   # 或用 API 上传后，把下载链接填到 index.html 的下载按钮 href
+   ```
+
+3. 下载链接格式：
+   `https://github.com/perfski/perfski.github.io/releases/download/<tag>/<文件名>`
+
+当前发布：**HeyTRACE 1.1.0**（tag `HeyTRACE-v1.1.0`）。
 
 ## 本地预览
 
@@ -32,8 +51,9 @@ python -m http.server 8000
 1. **中文文案**：直接改 `index.html` 里对应的中文。
 2. **英文文案**：在 `js/translations.js` 中找到同名 `data-i18n` 键修改；
    新增内容时，在 HTML 元素上加 `data-i18n="your.key"`，并在 `translations.js` 的 `en` 中补上同键英文。
-3. **个人信息**：姓名/头像、邮箱（`hello@perfski.dev`）、GitHub 链接、技能列表、项目卡片都在 `index.html` 中，按注释替换即可。
-4. **配色**：`css/style.css` 顶部的 CSS 变量（`--accent`、`--gradient` 等）。
+3. **新增作品**：在 `index.html` 的 `#projects` 区块按注释追加下载卡片，并同步 `translations.js`。
+4. **个人信息**：邮箱（`hello@perfski.dev`）、GitHub 链接、关于文案都在 `index.html` 中。
+5. **配色**：`css/style.css` 顶部的 CSS 变量（`--accent`、`--gradient` 等）。
 
 ## 部署（GitHub Pages）
 
