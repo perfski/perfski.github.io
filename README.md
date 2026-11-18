@@ -21,19 +21,14 @@ PerfSki 的个人作品下载站，纯静态 HTML / CSS / JS 构建，中英双�
 
 ## 作品下载托管（GitHub Releases）
 
-安装包通常超过 GitHub 仓库单文件 100MB 上限，因此**不直接进仓库**，而是挂到
-[GitHub Releases](https://github.com/perfski/perfski.github.io/releases)：
+安装包超过 GitHub 仓库单文件 100MB 上限，且本站仓库设为私有（私有仓库 Release 匿名不可下载），
+因此安装包统一托管在**公开发布仓库** [perfski/heytrace](https://github.com/perfski/heytrace) 的
+[Releases](https://github.com/perfski/heytrace/releases)：
 
 1. 把安装包放到 `project/` 目录（该目录已加入 .gitignore）。
-2. 创建 Release 并上传安装包：
-
-   ```bash
-   # 在 GitHub 网页创建 release（tag 例如 HeyTRACE-v1.2.0），
-   # 或用 API 上传后，把下载链接填到 index.html 的下载按钮 href
-   ```
-
+2. 在 `perfski/heytrace` 创建 Release（tag 例如 `HeyTRACE-v1.2.0`）并上传安装包。
 3. 下载链接格式：
-   `https://github.com/perfski/perfski.github.io/releases/download/<tag>/<文件名>`
+   `https://github.com/perfski/heytrace/releases/download/<tag>/<文件名>`
 
 当前发布：**HeyTRACE 1.1.0**（tag `HeyTRACE-v1.1.0`）。
 
