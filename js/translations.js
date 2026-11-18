@@ -12,6 +12,9 @@ window.I18N = {
     "meta.description":
       "PerfSki tool download center: HeyTRACE and other self-developed tools & apps. Free download.",
 
+    /* brand */
+    "brand.subtitle": "Android Performance Trace Analysis",
+
     /* nav */
     "nav.menu": "Open menu",
     "nav.projects": "Downloads",
