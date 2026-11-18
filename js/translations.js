@@ -8,7 +8,7 @@
 window.I18N = {
   en: {
     /* meta */
-    "meta.title": "PerfSki — Tool Download",
+    "meta.title": "HeyTRACE — Tool Download",
     "meta.description":
       "PerfSki tool download center: HeyTRACE and other self-developed tools & apps. Free download.",
 

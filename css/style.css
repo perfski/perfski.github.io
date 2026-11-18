@@ -1,6 +1,6 @@
 /* ============================================================
    PerfSki — 工具下载站
-   简约专业风格：暖米色底（参考 claude.com）/ 深色文字 / 品牌蓝强调 / 细边框卡片
+   简约专业风格：暖米色底 / 深墨色按钮 / 赤陶橙强调（配色参考 claude.com）
    深色主题为辅。无渐变、无毛玻璃、无光晕装饰。
    ============================================================ */
 
@@ -8,18 +8,22 @@
   --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
     "Microsoft YaHei", "Noto Sans SC", Roboto, sans-serif;
 
-  /* 浅色（默认）— 暖米色调，参考 claude.com */
+  /* 浅色（默认）— 与 claude.com 同一套灰度和强调色 */
   --bg: #faf9f5;
   --bg-alt: #f5f4ed;
   --surface: #ffffff;
   --border: #e8e6dc;
   --border-strong: #dedcd1;
-  --text: #1e2a3a;
-  --text-muted: #6e7681;
-  --accent: #4371fd;
-  --accent-hover: #2f5bea;
-  --accent-soft: rgba(67, 113, 253, 0.08);
-  --accent-glow: 0 0 8px 4px rgba(67, 113, 253, 0.2);
+  --text: #1a1918;
+  --text-muted: #5e5d59;
+  --accent: #d97757;
+  --accent-hover: #c6613f;
+  --accent-soft: rgba(217, 119, 87, 0.08);
+  --btn-primary-bg: #141413;
+  --btn-primary-fg: #faf9f5;
+  --btn-secondary-bg: #e8e6dc;
+  --btn-secondary-fg: #4d4c48;
+  --btn-secondary-border: #d1cfc5;
   --shadow-card: 0 1px 2px rgba(20, 20, 19, 0.05);
   --shadow-hover: 0 10px 28px rgba(20, 20, 19, 0.1);
   --header-bg: rgba(250, 249, 245, 0.92);
@@ -31,12 +35,16 @@
   --surface: #1f1e1d;
   --border: rgba(255, 255, 255, 0.1);
   --border-strong: rgba(255, 255, 255, 0.16);
-  --text: #e6edf3;
-  --text-muted: #93a0af;
-  --accent: #5b82ff;
-  --accent-hover: #7ba0ff;
-  --accent-soft: rgba(91, 130, 255, 0.14);
-  --accent-glow: 0 0 8px 4px rgba(91, 130, 255, 0.22);
+  --text: #faf9f5;
+  --text-muted: #9c9a92;
+  --accent: #d97757;
+  --accent-hover: #c6613f;
+  --accent-soft: rgba(217, 119, 87, 0.14);
+  --btn-primary-bg: #faf9f5;
+  --btn-primary-fg: #141413;
+  --btn-secondary-bg: #30302e;
+  --btn-secondary-fg: #faf9f5;
+  --btn-secondary-border: #3d3d3a;
   --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.3);
   --shadow-hover: 0 10px 28px rgba(0, 0, 0, 0.45);
   --header-bg: rgba(20, 20, 19, 0.92);
@@ -65,7 +73,7 @@ body {
 }
 
 ::selection {
-  background: rgba(67, 113, 253, 0.18);
+  background: rgba(217, 119, 87, 0.18);
 }
 
 img,
@@ -346,35 +354,35 @@ ul {
   align-items: center;
   justify-content: center;
   padding: 0.85rem 1.65rem;
-  border-radius: 10px;
+  border-radius: 8px;
   font-size: 1rem;
   font-weight: 600;
   border: 1px solid transparent;
   cursor: pointer;
-  transition: background-color 0.18s ease, border-color 0.18s ease,
-    color 0.18s ease, box-shadow 0.18s ease;
+  transition: background-color 0.2s ease, border-color 0.2s ease,
+    color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .btn-primary {
-  background: var(--accent);
-  color: #ffffff;
+  background: var(--btn-primary-bg);
+  color: var(--btn-primary-fg);
+  box-shadow: 0 0 0 0 var(--btn-primary-bg);
 }
 
 .btn-primary:hover {
-  background: var(--accent-hover);
-  color: #ffffff;
-  box-shadow: var(--accent-glow);
+  color: var(--btn-primary-fg);
+  box-shadow: 0 0 0 2px var(--btn-primary-bg);
 }
 
 .btn-secondary {
-  background: var(--surface);
-  border-color: var(--border-strong);
-  color: var(--text);
+  background: var(--btn-secondary-bg);
+  color: var(--btn-secondary-fg);
+  box-shadow: 0 0 0 0 var(--btn-secondary-bg), 0 0 0 1px var(--btn-secondary-border);
 }
 
 .btn-secondary:hover {
-  border-color: var(--accent);
-  color: var(--accent);
+  color: var(--btn-primary-bg);
+  box-shadow: 0 0 0 1px var(--btn-secondary-bg), 0 0 0 2px var(--btn-secondary-border);
 }
 
 /* ---------- 通用 Section ---------- */
@@ -539,7 +547,8 @@ ul {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  text-align: center;
   gap: 0.75rem;
   color: var(--text-muted);
   font-size: 0.92rem;
@@ -547,6 +556,31 @@ ul {
 
 .footer-inner p {
   margin: 0;
+}
+
+.footer-line {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  line-height: 1.6;
+}
+
+.footer-logo {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #0b0f19;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.footer-logo img {
+  display: block;
+  width: 1.25rem;
+  height: 1.25rem;
 }
 
 /* ---------- 滚动出现动画（仅在 JS 可用时隐藏初始状态） ---------- */
