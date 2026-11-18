@@ -43,7 +43,6 @@ window.I18N = {
     "projects.tag.jank": "Jank Analysis",
     "projects.tag.frame": "Frame Pipeline",
     "projects.tag.power": "CPU / Power",
-    "projects.link.release": "Release Page",
 
     /* about */
     "about.kicker": "About",
