@@ -285,10 +285,11 @@ ul {
 }
 
 .hero-role {
-  font-size: clamp(1.15rem, 2.4vw, 1.45rem);
-  font-weight: 500;
+  font-size: clamp(1.55rem, 3.2vw, 2.15rem);
+  font-weight: 600;
+  letter-spacing: -0.015em;
   color: var(--text);
-  margin-bottom: 1rem;
+  margin-bottom: 1.15rem;
 }
 
 .hero-desc {
@@ -393,56 +394,6 @@ ul {
   color: var(--text-muted);
   max-width: 40rem;
   margin-bottom: 2.5rem;
-}
-
-/* ---------- 关于 ---------- */
-.about-grid {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 3.5rem;
-  align-items: start;
-  margin-top: 2.5rem;
-}
-
-.about-avatar img {
-  width: 200px;
-  height: 200px;
-  border-radius: 24px;
-  border: 1px solid var(--border);
-  image-rendering: pixelated;
-}
-
-.about-body p {
-  color: var(--text-muted);
-  max-width: 40rem;
-}
-
-.fact-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
-  gap: 1.15rem;
-  margin: 1.75rem 0 0;
-}
-
-.fact {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  padding: 1.05rem 1.2rem;
-}
-
-.fact dt {
-  font-size: 0.78rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--text-muted);
-  margin-bottom: 0.35rem;
-}
-
-.fact dd {
-  margin: 0;
-  font-weight: 600;
 }
 
 /* ---------- 卡片 / 产品 ---------- */
@@ -676,11 +627,6 @@ ul {
   .hero-stats li {
     padding: 0;
     border-left: none;
-  }
-
-  .about-grid {
-    grid-template-columns: 1fr;
-    gap: 2rem;
   }
 
   .section {

@@ -14,7 +14,6 @@ window.I18N = {
 
     /* nav */
     "nav.menu": "Open menu",
-    "nav.about": "About",
     "nav.projects": "Downloads",
     "nav.contact": "Contact",
     "nav.theme": "Toggle theme",
@@ -25,7 +24,6 @@ window.I18N = {
       "The official download center for the products I build. Everything is free to download and use. Enjoy!",
     "hero.cta.download": "Download",
     "hero.cta.contact": "Contact Me",
-    "hero.stat.works": "Released products",
     "hero.stat.version": "Latest version",
     "hero.stat.platform": "Platform",
 
@@ -40,26 +38,12 @@ window.I18N = {
     "projects.tag.frame": "Frame Pipeline",
     "projects.tag.power": "CPU / Power",
 
-    /* about */
-    "about.title": "Solving problems with code, winning users with experience",
-    "about.p1":
-      "I'm a software developer focused on performance analysis tools and applications. I enjoy digging into performance optimization, engineering efficiency, and interaction details — I believe great products need both a solid core and a smooth experience.",
-    "about.p2":
-      "Outside of work, I enjoy skiing, reading, and tinkering with new technology. If any of that sounds interesting — or you'd like to collaborate — feel free to reach out.",
-    "about.fact.location.label": "Location",
-    "about.fact.location.value": "China · Remote friendly",
-    "about.fact.focus.label": "Focus",
-    "about.fact.focus.value": "Performance Analysis · Tooling · AI Apps",
-    "about.fact.email.label": "Email",
-
     /* contact */
     "contact.title": "Feedback & Collaboration",
     "contact.desc":
       "Hit a problem, have a feature idea, or want to collaborate — drop me an email anytime.",
-    "contact.cta.email": "Send an Email",
 
     /* footer */
-    "footer.rights": "All rights reserved",
-    "footer.built": "Built with plain HTML / CSS / JS"
+    "footer.rights": "All rights reserved"
   }
 };
