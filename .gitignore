@@ -33,3 +33,15 @@ google-services.json
 
 # Android Profiling
 *.hprof
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.cursor/
+
+# Local scratch notes
+README.TXT

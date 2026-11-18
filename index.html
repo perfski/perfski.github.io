@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="meta.title">PerfSki — 个人主页</title>
+  <meta name="description" data-i18n-content="meta.description"
+        content="PerfSki 的个人主页与作品集：软件开发者，关注性能与体验。">
+  <meta property="og:type" content="website">
+  <meta property="og:title" data-i18n-content="meta.title" content="PerfSki — 个人主页">
+  <meta property="og:description" data-i18n-content="meta.description"
+        content="PerfSki 的个人主页与作品集：软件开发者，关注性能与体验。">
+  <meta name="theme-color" content="#0b0f19">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============ 顶部导航 ============ -->
+  <header class="site-header" id="top">
+    <nav class="container nav">
+      <a class="brand" href="#top" aria-label="PerfSki">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="28" height="28"><defs>
+            <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#38bdf8"/><stop offset="1" stop-color="#818cf8"/>
+            </linearGradient></defs>
+            <rect x="1.5" y="1.5" width="29" height="29" rx="8" fill="url(#bg)"/>
+            <path d="M9 23 L16 8 L23 23 M12.2 18 h7.6" stroke="#0b0f19" stroke-width="2.6"
+                  stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          </svg>
+        </span>
+        <span class="brand-name">PerfSki</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu"
+              data-i18n-aria="nav.menu" aria-label="打开菜单">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+
+      <div class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="#about" data-i18n="nav.about">关于</a></li>
+          <li><a href="#skills" data-i18n="nav.skills">技能</a></li>
+          <li><a href="#projects" data-i18n="nav.projects">项目</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">联系</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="icon-btn" id="themeToggle" data-i18n-aria="nav.theme" aria-label="切换主题">
+            <span class="theme-icon" aria-hidden="true"></span>
+          </button>
+          <button class="lang-btn" id="langToggle" aria-label="Switch language / 切换语言">
+            <span data-lang-label>EN</span>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ============ 首屏 Hero ============ -->
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <p class="hero-kicker reveal" data-i18n="hero.kicker">你好，很高兴见到你 👋</p>
+        <h1 class="hero-title reveal">
+          <span data-i18n="hero.title.pre">我是</span>
+          <span class="gradient-text">PerfSki</span>
+        </h1>
+        <p class="hero-role reveal" data-i18n="hero.role">软件开发者 · 性能与体验爱好者</p>
+        <p class="hero-desc reveal" data-i18n="hero.desc">
+          我热衷于构建快速、可靠、体验出色的产品。这里是我的个人主页与作品集，欢迎了解我做过的事情。
+        </p>
+        <div class="hero-actions reveal">
+          <a class="btn btn-primary" href="#projects" data-i18n="hero.cta.projects">查看项目</a>
+          <a class="btn btn-secondary" href="#contact" data-i18n="hero.cta.contact">联系我</a>
+        </div>
+        <ul class="hero-stats reveal" id="heroStats">
+          <li><strong>5+</strong><span data-i18n="hero.stat.years">年开发经验</span></li>
+          <li><strong>20+</strong><span data-i18n="hero.stat.projects">个项目</span></li>
+          <li><strong>∞</strong><span data-i18n="hero.stat.passion">持续学习</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ 关于 ============ -->
+    <section class="section" id="about">
+      <div class="container">
+        <p class="kicker reveal" data-i18n="about.kicker">关于我</p>
+        <h2 class="section-title reveal" data-i18n="about.title">用代码解决问题，用体验打动用户</h2>
+        <div class="about-grid">
+          <div class="about-avatar reveal" aria-hidden="true">
+            <svg viewBox="0 0 200 200" width="200" height="200">
+              <defs>
+                <linearGradient id="av" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#38bdf8"/><stop offset="1" stop-color="#818cf8"/>
+                </linearGradient>
+              </defs>
+              <rect width="200" height="200" rx="28" fill="url(#av)"/>
+              <text x="100" y="128" text-anchor="middle" font-size="84" font-weight="700"
+                    font-family="system-ui, sans-serif" fill="#0b0f19">P</text>
+            </svg>
+          </div>
+          <div class="about-body">
+            <p class="reveal" data-i18n="about.p1">
+              我是一名软件开发者，专注于 Web 与应用开发。我喜欢研究性能优化、工程效率和交互细节，
+              相信好的产品既要有扎实的内核，也要有顺滑的体验。
+            </p>
+            <p class="reveal" data-i18n="about.p2">
+              工作之外，我享受滑雪、阅读和折腾新技术。如果你有感兴趣的话题或合作想法，欢迎随时联系我。
+            </p>
+            <dl class="fact-list reveal">
+              <div class="fact">
+                <dt data-i18n="about.fact.location.label">所在地</dt>
+                <dd data-i18n="about.fact.location.value">中国 · 远程协作</dd>
+              </div>
+              <div class="fact">
+                <dt data-i18n="about.fact.focus.label">关注方向</dt>
+                <dd data-i18n="about.fact.focus.value">性能优化 · Web 开发 · 开源</dd>
+              </div>
+              <div class="fact">
+                <dt data-i18n="about.fact.email.label">邮箱</dt>
+                <dd><a href="mailto:hello@perfski.dev">hello@perfski.dev</a></dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 技能 ============ -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <p class="kicker reveal" data-i18n="skills.kicker">技能</p>
+        <h2 class="section-title reveal" data-i18n="skills.title">我常用的工具与技术</h2>
+        <div class="skills-grid">
+          <article class="card skill-card reveal">
+            <h3 data-i18n="skills.cat.frontend">前端开发</h3>
+            <ul class="tag-list">
+              <li>HTML / CSS</li><li>JavaScript</li><li>TypeScript</li>
+              <li>React</li><li>Vue</li>
+            </ul>
+          </article>
+          <article class="card skill-card reveal">
+            <h3 data-i18n="skills.cat.backend">后端开发</h3>
+            <ul class="tag-list">
+              <li>Node.js</li><li>Go</li><li>Python</li>
+              <li>PostgreSQL</li><li>Redis</li>
+            </ul>
+          </article>
+          <article class="card skill-card reveal">
+            <h3 data-i18n="skills.cat.performance">性能与工程</h3>
+            <ul class="tag-list">
+              <li data-i18n="skills.tag.perf">性能剖析</li><li>CI / CD</li>
+              <li>Docker</li><li data-i18n="skills.tag.testing">自动化测试</li>
+              <li>Observability</li>
+            </ul>
+          </article>
+          <article class="card skill-card reveal">
+            <h3 data-i18n="skills.cat.tools">协作与工具</h3>
+            <ul class="tag-list">
+              <li>Git</li><li>Linux</li><li>Figma</li>
+              <li data-i18n="skills.tag.agile">敏捷协作</li>
+              <li data-i18n="skills.tag.docs">技术写作</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 项目 ============ -->
+    <section class="section" id="projects">
+      <div class="container">
+        <p class="kicker reveal" data-i18n="projects.kicker">项目</p>
+        <h2 class="section-title reveal" data-i18n="projects.title">精选作品集</h2>
+        <p class="section-desc reveal" data-i18n="projects.desc">以下是一些代表性的项目（示例内容，可替换为你的真实作品）。</p>
+        <div class="projects-grid">
+
+          <article class="card project-card reveal">
+            <div class="project-icon" aria-hidden="true">⚡</div>
+            <h3>PerfKit</h3>
+            <p data-i18n="projects.perfkit.desc">
+              一套轻量的性能监控与剖析工具集，帮助团队快速定位 Web 应用的性能瓶颈。
+            </p>
+            <ul class="tag-list">
+              <li>TypeScript</li><li>Node.js</li>
+              <li data-i18n="projects.tag.monitor">监控</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/perfski" data-i18n="projects.link.code">源码</a>
+              <a href="#" data-i18n="projects.link.demo">在线演示</a>
+            </div>
+          </article>
+
+          <article class="card project-card reveal">
+            <div class="project-icon" aria-hidden="true">❄️</div>
+            <h3>SnowUI</h3>
+            <p data-i18n="projects.snowui.desc">
+              面向现代 Web 的轻量 UI 组件库，注重可访问性、主题定制与极小的包体积。
+            </p>
+            <ul class="tag-list">
+              <li>CSS</li><li>JavaScript</li>
+              <li data-i18n="projects.tag.a11y">可访问性</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/perfski" data-i18n="projects.link.code">源码</a>
+              <a href="#" data-i18n="projects.link.demo">在线演示</a>
+            </div>
+          </article>
+
+          <article class="card project-card reveal">
+            <div class="project-icon" aria-hidden="true">⛷️</div>
+            <h3>TrailMap</h3>
+            <p data-i18n="projects.trailmap.desc">
+              滑雪与户外轨迹记录应用，支持轨迹回放、数据分析与路线分享。
+            </p>
+            <ul class="tag-list">
+              <li>Vue</li><li>Go</li>
+              <li>PostgreSQL</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/perfski" data-i18n="projects.link.code">源码</a>
+              <a href="#" data-i18n="projects.link.demo">在线演示</a>
+            </div>
+          </article>
+
+          <article class="card project-card reveal">
+            <div class="project-icon" aria-hidden="true">🚀</div>
+            <h3>LaunchPad</h3>
+            <p data-i18n="projects.launchpad.desc">
+              静态站点部署与优化脚手架，一条命令完成构建、压缩与全球加速发布。
+            </p>
+            <ul class="tag-list">
+              <li>Python</li><li>Docker</li>
+              <li>CI / CD</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/perfski" data-i18n="projects.link.code">源码</a>
+              <a href="#" data-i18n="projects.link.demo">在线演示</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 联系 ============ -->
+    <section class="section section-alt" id="contact">
+      <div class="container contact-box reveal">
+        <p class="kicker" data-i18n="contact.kicker">联系</p>
+        <h2 class="section-title" data-i18n="contact.title">一起做点有意思的事</h2>
+        <p class="section-desc" data-i18n="contact.desc">
+          无论是项目合作、技术交流还是只是打个招呼，都欢迎给我发邮件。
+        </p>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="mailto:hello@perfski.dev" data-i18n="contact.cta.email">发送邮件</a>
+          <a class="btn btn-secondary" href="https://github.com/perfski" target="_blank" rel="noopener">
+            GitHub ↗
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ 页脚 ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>
+        © <span id="year">2026</span> PerfSki ·
+        <span data-i18n="footer.rights">保留所有权利</span>
+      </p>
+      <p class="footer-note" data-i18n="footer.built">使用纯 HTML / CSS / JS 构建</p>
+    </div>
+  </footer>
+
+  <script src="js/translations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
