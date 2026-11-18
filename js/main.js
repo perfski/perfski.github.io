@@ -33,10 +33,11 @@
   // 优先级：用户手动选择 > 系统偏好 > 深色
   try {
     var storedTheme = storageGet("theme");
-    var systemLight =
+    var systemDark =
       window.matchMedia &&
-      window.matchMedia("(prefers-color-scheme: light)").matches;
-    doc.setAttribute("data-theme", storedTheme || (systemLight ? "light" : "dark"));
+      window.matchMedia("(prefers-color-scheme: dark)").matches;
+    // 优先级：用户手动选择 > 系统偏好 > 浅色（产品站默认）
+    doc.setAttribute("data-theme", storedTheme || (systemDark ? "dark" : "light"));
 
     document.getElementById("themeToggle").addEventListener("click", function () {
       var next = doc.getAttribute("data-theme") === "light" ? "dark" : "light";
@@ -44,7 +45,7 @@
       storageSet("theme", next);
     });
   } catch (e) {
-    doc.setAttribute("data-theme", "dark");
+    doc.setAttribute("data-theme", "light");
   }
 
   /* ---------- 中英切换 ----------

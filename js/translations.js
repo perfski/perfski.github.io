@@ -8,34 +8,32 @@
 window.I18N = {
   en: {
     /* meta */
-    "meta.title": "PerfSki — Download My Apps",
+    "meta.title": "PerfSki — Product Download",
     "meta.description":
-      "Download page for PerfSki's personal works: HeyTRACE and other self-developed tools & apps. Free download.",
+      "PerfSki product download center: HeyTRACE and other self-developed tools & apps. Free download.",
 
     /* nav */
     "nav.menu": "Open menu",
     "nav.about": "About",
-    "nav.projects": "Projects",
+    "nav.projects": "Downloads",
     "nav.contact": "Contact",
     "nav.theme": "Toggle theme",
 
     /* hero */
-    "hero.kicker": "Welcome to my works page 👋",
-    "hero.title.pre": "I'm",
-    "hero.role": "Indie Developer · Performance Analysis Tools",
+    "hero.kicker": "Product Download",
+    "hero.role": "Performance tools & apps · Free download",
     "hero.desc":
-      "This is the official download page for my personal works — the tools and apps I build. Everything is free to download and use. Enjoy!",
-    "hero.cta.download": "Download Works",
+      "The official download center for the products I build. Everything is free to download and use. Enjoy!",
+    "hero.cta.download": "Download",
     "hero.cta.contact": "Contact Me",
-    "hero.stat.works": "Published works",
+    "hero.stat.works": "Released products",
     "hero.stat.version": "Latest version",
     "hero.stat.platform": "Platform",
 
-    /* projects / downloads */
-    "projects.kicker": "Works",
-    "projects.title": "All Downloads",
-    "projects.desc":
-      "Here are all my currently published works. Click to download.",
+    /* products / downloads */
+    "projects.kicker": "Products",
+    "projects.title": "Product Downloads",
+    "projects.desc": "All currently released products. Click to download.",
     "projects.heytrace.meta": "Windows · 106.6 MB · RAR archive",
     "projects.heytrace.desc":
       "An AI-powered Android performance trace analysis desktop app. Built on Perfetto data, it ships with an AI agent and a rich analysis skill set (jank detection, frame pipeline analysis, CPU scheduling & throttling, SurfaceFlinger composition, React Native bridge jank, power analysis, and more), supports GLM / Kimi / Qwen and other LLMs, and generates professional performance analysis reports in one click.",
