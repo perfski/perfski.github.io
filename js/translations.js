@@ -44,7 +44,7 @@ window.I18N = {
     /* contact */
     "contact.title": "Feedback & Collaboration",
     "contact.desc":
-      "Hit a problem, have a feature idea, or want to collaborate — drop me an email anytime.",
+      "Hit a problem or have a feature idea — drop me an email anytime.",
 
     /* footer */
     "footer.rights": "All rights reserved"
