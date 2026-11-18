@@ -12,7 +12,8 @@ PerfSki 的个人主页 / 作品集，纯静态 HTML / CSS / JS 构建，中英�
 ├── css/style.css       # 样式（深/浅主题、响应式、动画）
 ├── js/translations.js  # 英文翻译字典
 ├── js/main.js          # 主题切换 / 语言切换 / 交互
-├── assets/favicon.svg  # 网站图标
+├── assets/logo.png     # 站点 logo（透明底像素画）
+├── assets/favicon.png  # 网站图标（logo + 深色圆角底板）
 ├── .gitignore
 └── LICENSE             # Apache-2.0
 ```
