@@ -20,7 +20,6 @@ window.I18N = {
     "nav.theme": "Toggle theme",
 
     /* hero */
-    "hero.kicker": "Product Download",
     "hero.role": "Performance tools & apps · Free download",
     "hero.desc":
       "The official download center for the products I build. Everything is free to download and use. Enjoy!",
@@ -31,7 +30,6 @@ window.I18N = {
     "hero.stat.platform": "Platform",
 
     /* products / downloads */
-    "projects.kicker": "Products",
     "projects.title": "Product Downloads",
     "projects.desc": "All currently released products. Click to download.",
     "projects.heytrace.meta": "Windows · 106.6 MB · RAR archive",
@@ -43,7 +41,6 @@ window.I18N = {
     "projects.tag.power": "CPU / Power",
 
     /* about */
-    "about.kicker": "About",
     "about.title": "Solving problems with code, winning users with experience",
     "about.p1":
       "I'm a software developer focused on performance analysis tools and applications. I enjoy digging into performance optimization, engineering efficiency, and interaction details — I believe great products need both a solid core and a smooth experience.",
@@ -56,7 +53,6 @@ window.I18N = {
     "about.fact.email.label": "Email",
 
     /* contact */
-    "contact.kicker": "Contact",
     "contact.title": "Feedback & Collaboration",
     "contact.desc":
       "Hit a problem, have a feature idea, or want to collaborate — drop me an email anytime.",

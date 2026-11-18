@@ -276,16 +276,6 @@ ul {
   border-bottom: 1px solid var(--border);
 }
 
-.hero-kicker {
-  display: inline-block;
-  font-size: 0.82rem;
-  font-weight: 600;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--accent);
-  margin-bottom: 1.15rem;
-}
-
 .hero-title {
   font-size: clamp(2.6rem, 5.6vw, 4.25rem);
   font-weight: 700;
@@ -391,15 +381,6 @@ ul {
   background: var(--bg-alt);
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
-}
-
-.kicker {
-  font-size: 0.82rem;
-  font-weight: 600;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--accent);
-  margin-bottom: 0.85rem;
 }
 
 .section-title {
@@ -584,10 +565,6 @@ ul {
 .contact-box .section-desc {
   margin-left: auto;
   margin-right: auto;
-}
-
-.contact-box .kicker {
-  display: inline-block;
 }
 
 .contact-actions {
