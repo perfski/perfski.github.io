@@ -1,6 +1,6 @@
 /* ============================================================
-   PerfSki — 产品下载站
-   简约专业风格：白底 / 深藏青文字 / 品牌蓝强调 / 细边框卡片
+   PerfSki — 工具下载站
+   简约专业风格：暖米色底（参考 claude.com）/ 深色文字 / 品牌蓝强调 / 细边框卡片
    深色主题为辅。无渐变、无毛玻璃、无光晕装饰。
    ============================================================ */
 
@@ -8,27 +8,27 @@
   --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
     "Microsoft YaHei", "Noto Sans SC", Roboto, sans-serif;
 
-  /* 浅色（默认） */
-  --bg: #ffffff;
-  --bg-alt: #f7f8fa;
+  /* 浅色（默认）— 暖米色调，参考 claude.com */
+  --bg: #faf9f5;
+  --bg-alt: #f5f4ed;
   --surface: #ffffff;
-  --border: #e5e6eb;
-  --border-strong: #dee0e3;
+  --border: #e8e6dc;
+  --border-strong: #dedcd1;
   --text: #1e2a3a;
   --text-muted: #6e7681;
   --accent: #4371fd;
   --accent-hover: #2f5bea;
   --accent-soft: rgba(67, 113, 253, 0.08);
   --accent-glow: 0 0 8px 4px rgba(67, 113, 253, 0.2);
-  --shadow-card: 0 1px 2px rgba(30, 42, 58, 0.04);
-  --shadow-hover: 0 10px 28px rgba(30, 42, 58, 0.1);
-  --header-bg: rgba(255, 255, 255, 0.92);
+  --shadow-card: 0 1px 2px rgba(20, 20, 19, 0.05);
+  --shadow-hover: 0 10px 28px rgba(20, 20, 19, 0.1);
+  --header-bg: rgba(250, 249, 245, 0.92);
 }
 
 [data-theme="dark"] {
-  --bg: #14171c;
-  --bg-alt: #1a1e25;
-  --surface: #1c2129;
+  --bg: #141413;
+  --bg-alt: #1a1918;
+  --surface: #1f1e1d;
   --border: rgba(255, 255, 255, 0.1);
   --border-strong: rgba(255, 255, 255, 0.16);
   --text: #e6edf3;
@@ -39,7 +39,7 @@
   --accent-glow: 0 0 8px 4px rgba(91, 130, 255, 0.22);
   --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.3);
   --shadow-hover: 0 10px 28px rgba(0, 0, 0, 0.45);
-  --header-bg: rgba(20, 23, 28, 0.92);
+  --header-bg: rgba(20, 20, 19, 0.92);
 }
 
 /* ---------- 基础 ---------- */
@@ -134,8 +134,12 @@ ul {
   gap: 0.6rem;
   color: var(--text);
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: 1.02rem;
   letter-spacing: -0.01em;
+}
+
+.brand-name {
+  white-space: nowrap;
 }
 
 .brand:hover {

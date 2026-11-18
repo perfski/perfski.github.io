@@ -8,9 +8,9 @@
 window.I18N = {
   en: {
     /* meta */
-    "meta.title": "PerfSki — Product Download",
+    "meta.title": "PerfSki — Tool Download",
     "meta.description":
-      "PerfSki product download center: HeyTRACE and other self-developed tools & apps. Free download.",
+      "PerfSki tool download center: HeyTRACE and other self-developed tools & apps. Free download.",
 
     /* nav */
     "nav.menu": "Open menu",
@@ -21,15 +21,15 @@ window.I18N = {
     /* hero */
     "hero.role": "Performance tools & apps · Free download",
     "hero.desc":
-      "The official download center for the products I build. Everything is free to download and use. Enjoy!",
+      "The official download center for the tools I build. Everything is free to download and use. Enjoy!",
     "hero.cta.download": "Download",
     "hero.cta.contact": "Contact Me",
     "hero.stat.version": "Latest version",
     "hero.stat.platform": "Platform",
 
-    /* products / downloads */
-    "projects.title": "Product Downloads",
-    "projects.desc": "All currently released products. Click to download.",
+    /* tools / downloads */
+    "projects.title": "Tool Downloads",
+    "projects.desc": "All currently released tools. Click to download.",
     "projects.heytrace.meta": "Windows · 106.6 MB · RAR archive",
     "projects.heytrace.desc":
       "An AI-powered Android performance trace analysis desktop app. Built on Perfetto data, it ships with an AI agent and a rich analysis skill set (jank detection, frame pipeline analysis, CPU scheduling & throttling, SurfaceFlinger composition, React Native bridge jank, power analysis, and more), supports GLM / Kimi / Qwen and other LLMs, and generates professional performance analysis reports in one click.",
